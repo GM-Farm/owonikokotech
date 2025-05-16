@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OWONIKOKO TECHNICAL ENTERPRISE</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background-color: #0d1b2a;
+      color: white;
+      padding: 1em 2em;
+    }
+    .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .header-content img {
+      height: 50px;
+      margin-right: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      padding: 10px 0;
+      background-color: #1b263b;
+      margin: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    section {
+      padding: 2em;
+    }
+    footer {
+      background-color: #0d1b2a;
+      color: white;
+      text-align: center;
+      padding: 1em;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5em;
+      margin-top: 1.5em;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    form {
+      max-width: 500px;
+      margin-top: 1em;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #0d1b2a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <img src="images/logo.jpg" alt="Company Logo">
+      <div>
+        <h1>OWONIKOKO TECHNICAL ENTERPRISE</h1>
+        <p>Specialists in Security and Energy Solutions</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to OWONIKOKO TECHNICAL ENTERPRISE. We specialize in advanced security and electrical systems for homes and businesses.</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>OWONIKOKO TECHNICAL ENTERPRISE is a registered company offering CCTV, solar energy solutions, fire alarms, DStv installations, intercom systems, and more.</p>
+  </section>
+
+  <section id="services">
+    <h2>Services</h2>
+    <ul>
+      <li>CCTV Surveillance System Installation</li>
+      <li>Solar and Inverter Setup</li>
+      <li>Fire Alarm Systems</li>
+      <li>DStv and Satellite Installation</li>
+      <li>Intercom Systems</li>
+      <li>Electrical House Wiring</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <div class="gallery-grid">
+      <img src="images/work1.jpg" alt="Work In Progress">
+      <img src="images/work2.jpg" alt="Work On Ladder">
+    </div>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Address: 3 Ibukun Oluwa Street, Ilorin, Kwara State.<br>
+       Branch: 18 Magodo Estate, Kosofe, Lagos.<br>
+       Phone: 08130368379, 08055746301</p>
+    <form name="contact" method="POST" data-netlify="true" action="/thank-you.html">
+      <input type="hidden" name="form-name" value="contact">
+      <p>
+        <label>Your Name:<br><input type="text" name="name" required></label>
+      </p>
+      <p>
+        <label>Your Email:<br><input type="email" name="email" required></label>
+      </p>
+      <p>
+        <label>Message:<br><textarea name="message" rows="5" required></textarea></label>
+      </p>
+      <p><button type="submit">Send</button></p>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 OWONIKOKO TECHNICAL ENTERPRISE. All rights reserved.</p>
+  </footer>
+</body>
+</html>
